@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --fundo-header: #5a71bb;
+    --cor-botao-cadastrar: #0930af;
+    --cor-botao-limpar: #5fec00;
+    --cor-botao-deletar: rgb(196, 7, 7);
+}
+body, input{
+    font-family: 'Poppins';
+}
+header{
+    background-color: var(--fundo-header);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+.lista-cadastro{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+.lista-cadastro input[type="text"]{
+    flex: 1;
+    height: 40px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.lista-cadastro input[type="submit"]{
+    padding: 10px;
+    border: navajowhite;
+    cursor: pointer;
+    background-color: var(--cor-botao-cadastrar);
+    color: #fff;
+}
+.lista-produto-single{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+.lista-produto-single h3{
+    flex: 1;
+    padding: 0 20px;
+}
+.lista-produto-single .price-produto{
+    text-align: right;
+}
+.soma-produto{
+    margin: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.botao-limpar input[type="submit"]{
+    padding: 10px;
+    border: navajowhite;
+    cursor: pointer;
+    background-color: var(--cor-botao-limpar);
+    color: #000;
+    margin-left: 40px;
+}
+.lista-produto-single input[type="submit"]{
+    padding: 10px;
+    border: navajowhite;
+    cursor: pointer;
+    background-color: var(--cor-botao-deletar);
+    color: #fff;
+    margin-top: -5px;
+}
